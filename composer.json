@@ -1,0 +1,22 @@
+{
+    "name": "eloquent-uuid-performance",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/silasrm/eloquent-uuid.git"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "alsofronie/eloquent-uuid": "master"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "App\\Model\\": "src/models/",
+            "App\\Connection\\": "src/"
+        }
+    }
+}

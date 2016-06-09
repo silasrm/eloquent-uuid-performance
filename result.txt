@@ -1,0 +1,91 @@
+Benchmark with 100k inserts on User (users) and UserOp (usersop)
+
+SQLite In Memory
+
+☁  eloquent-uuid-performance  php src/normal.php
+Tempo: 133.37646007538
+Memória: 3.25 MB
+☁  eloquent-uuid-performance  php src/optimized.php
+Tempo: 145.05079603195
+Memória: 3.25 MB
+☁  eloquent-uuid-performance  php src/incremental.php
+Tempo: 137.17004394531
+Memória: 3 MB
+
+SQLite In File
+
+☁  eloquent-uuid-performance  php src/normal-file.php
+Tempo: 323.51243901253
+Memória: 3.25 MB
+Tamanho: 9,9 MB
+☁  eloquent-uuid-performance  php src/optimized-file.php
+Tempo: 420.23021888733
+Memória: 3.25 MB
+Tamanho: 9,9 MB
+☁  eloquent-uuid-performance  php src/incremental-file.php
+Tempo: 324.19542098045
+Memória: 3 MB
+Tamanho: 8,1 MB
+
+
+
+Benchmark with 100 inserts on User (users) and UserOp (usersop), 
+and 100 Post or PostOp for each User or UserOp
+
+SQLite In Memory
+
+☁  eloquent-uuid-performance  php src/normal-with-post.php
+Tempo: 1.4518489837646
+Memória: 3.25 MB
+☁  eloquent-uuid-performance  php src/optimized-with-post.php
+Tempo: 1.231616973877
+Memória: 3.25 MB
+☁  eloquent-uuid-performance  php src/incremental-with-post.php
+Tempo: 1.7930979728699
+Memória: 3.25 MB
+
+SQLite In File
+
+☁  eloquent-uuid-performance  php src/normal-with-post-file.php
+Tempo: 2.9804191589355
+Memória: 3.25 MB
+Tamanho: 104 KB
+☁  eloquent-uuid-performance  php src/optimized-with-post-file.php
+Tempo: 3.6536269187927
+Memória: 3.25 MB
+Tamanho: 104 KB
+☁  eloquent-uuid-performance  php src/incremental-with-post-file.php
+Tempo: 4.7274348735809
+Memória: 3.25 MB
+Tamanho: 76 KB
+
+
+
+Benchmark listing users  and yours posts using relationship
+
+SQLite In Memory
+
+☁  eloquent-uuid-performance  php src/normal-list.php
+Tempo: 0.083611965179443
+Memória: 2.5 MB
+☁  eloquent-uuid-performance  php src/optimized-list.php
+Tempo: 0.085762977600098
+Memória: 2.5 MB
+☁  eloquent-uuid-performance  php src/incremental-list.php
+Tempo: 0.1990180015564
+Memória: 2.25 MB
+
+SQLite In File
+
+☁  eloquent-uuid-performance  php src/normal-list-file.php
+Tempo: 0.12420511245728
+Memória: 2.5 MB
+Tamanho: 104 KB
+☁  eloquent-uuid-performance  php src/optimized-list-file.php
+Tempo: 0.12102603912354
+Memória: 2.5 MB
+Tamanho: 104 KB
+☁  eloquent-uuid-performance  php src/incremental-list-file.php
+Tempo: 0.24037885665894
+Memória: 2.25 MB
+Tamanho: 76 KB
