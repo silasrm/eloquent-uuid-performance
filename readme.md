@@ -1,3 +1,12 @@
+# Benchmark of optimizaton uuid store in alsofronie/eloquent-uuid
+
+Original Package: https://github.com/alsofronie/eloquent-uuid/
+
+My Package: https://github.com/silasrm/eloquent-uuid
+
+Results
+
+```
 Benchmark with 100k inserts on User (users) and UserOp (usersop)
 
 SQLite In Memory
@@ -89,3 +98,5 @@ Size: 104 KB
 Time: 0.24037885665894
 Memory Usage: 2.25 MB
 Size: 76 KB
+
+```
